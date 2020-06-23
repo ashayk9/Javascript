@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>Meditation</title>
+</head>
+<body>
+    <div class="app">
+
+        <div class="video-container">
+            <video loop>
+                <source src="./video/rain.mp4">
+            </video>
+        </div>
+
+        <div class="time-select">
+            <button data-time="10">2 min</button>
+            <button data-time="300">5 min</button>
+            <button data-time="600">10 min</button>
+        </div>
+        <div class="player-container">
+            <audio class="song">
+                <source src="./sounds/rain.mp3"> 
+            </audio>
+            <!-- <button class="play"><i class="fa fa-play-circle" style="font-size:200px;"></i></button> -->
+            <!-- <i class="fa fa-play-circle play" style="font-size:200px;"></i> -->
+            <!-- <img class="btn play" src="https://i.etsystatic.com/10919371/r/il/155a7d/1563938723/il_570xN.1563938723_1rmr.jpg" alt=""> -->
+            
+            <!-- <input class="btn play" type="image" src="https://i.etsystatic.com/10919371/r/il/155a7d/1563938723/il_570xN.1563938723_1rmr.jpg"  > -->
+            <input class="btn play" type="image" src="./svg/play.svg"  >
+
+            <h3 class="time-display">0:00</h3>
+        </div>
+        <div class="sound-picker">
+            <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4">
+            <img src="./svg/rain.svg" alt="rain"></button>
+
+            <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4">
+            <img src="./svg/beach.svg" alt="beach"></button>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
